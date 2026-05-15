@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: radial-gradient(circle at top, #141414, #0a0a0a);
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #fdcc2a;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4b10d;
+}
+
+nav a.active {
+  color: #f5d20a;
+}
+
+/* BOTÕES */
+.auth button {
+  margin-left: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.auth button:hover {
+  transform: translateY(-2px);
+}
+
+.green {
+  background: linear-gradient(135deg, #8a8651, #c9a815);
+  color: #000;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #fff, #eccb0c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #aaa;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* FILTERS */
+.filters {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filters input {
+  display: none;
+}
+
+.buttons {
+  margin: 25px 0;
+}
+
+.buttons label {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ddd;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.buttons label:hover {
+  border-color: #f8d510;
+  color: #f8d510;
+  transform: scale(1.05);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.card p {
+  color: #aaa;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* EFEITO */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(204, 169, 14, 0.35),
+    transparent 60%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(255, 208, 0, 0.5);
+}
+
+/* FILTROS */
+#streetwear:checked ~ .grid .card,
+#sneaker:checked ~ .grid .card,
+#tech:checked ~ .grid .card,
+#casual:checked ~ .grid .card,
+#formal:checked ~ .grid .card {
+  display: none;
+}
+
+#streetwear:checked ~ .grid .streetwear {
+  display: block;
+}
+
+#sneaker:checked ~ .grid .sneaker {
+  display: block;
+}
+
+#tech:checked ~ .grid .tech {
+  display: block;
+}
+
+#casual:checked ~ .grid .casual {
+  display: block;
+}
+
+#formal:checked ~ .grid .formal {
+  display: block;
+}
+
+#all:checked ~ .grid .card {
+  display: block;
+}
+.card img {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f8d510;
+  height: 30px;
+}
