@@ -1,14 +1,11 @@
-{
+body {
+  color: white;
+  padding-bottom: 50px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-
-body {
-  background: #050505;
-  color: white;
-  padding-bottom: 50px;
+  background: radial-gradient(circle at top, #141414, #0a0a0a);
 }
 
 /* HEADER */
@@ -16,12 +13,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  background: rgba(10, 10, 10, 0.7);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
-  color: #ffc933;
+  color: #f0cb24;
   font-size: 26px;
   font-weight: 800;
 }
@@ -49,13 +54,13 @@ nav .active {
 }
 
 .signin {
-  background: transparent;
+  background: white;
   border: 1px solid #ffc933;
-  color: white;
+  color: black;
 }
 
 .join {
-  background: #ffc933;
+  background: linear-gradient(135deg, #c2a316, #f0cb24);
 }
 
 /* HERO */

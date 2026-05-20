@@ -3,20 +3,30 @@ body {
   font-family: "Inter", Arial, sans-serif;
   background: radial-gradient(circle at top, #141414, #0a0a0a);
   color: #fff;
-} /* HEADER */
+}
+
+html {
+  scroll-behavior: smooth;
+}
 .header {
+  padding: 25px 50px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: rgba(17, 17, 17, 0.6);
+
+  background: rgba(10, 10, 10, 0.7);
+
   backdrop-filter: blur(12px);
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 .logo {
-  color: #fdcc2a;
+  color: #f0cb24;
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 18px;
@@ -47,7 +57,7 @@ nav a.active {
   transform: translateY(-2px);
 }
 .green {
-  background: linear-gradient(135deg, #8a8651, #c9a815);
+  background: linear-gradient(135deg, #c2a316, #f0cb24);
   color: #000;
 }
 .hero {
