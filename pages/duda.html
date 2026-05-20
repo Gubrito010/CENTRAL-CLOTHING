@@ -1,253 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketplace - Central Clothing</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace - Central Clothing</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="img/duda.css">
-  <link rel="stylesheet" href="eduardo.css">
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="img/duda.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">Central Clothing</div>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">CENTRAL CLOTHING</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="eduardo.html">Explore</a>
+        <a href="igor.html">Rankings</a>
+        <a href="rafael.html">Creators</a>
+        <a href="duda.html" class="active">Marketplace</a>
+      </nav>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="eduardo.html">Explore</a>
-      <a href="igor.html">Rankings</a>
-      <a href="rafael.html">Creators</a>
-      <a href="duda.html" class="active">Marketplace</a>
-    </nav>
-
-    <div class="auth">
-      <a href="gustavo.html">
-        <button>Sign In</button>
-        <button class="green">Join Free</button>
-      </a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1>EXPLORE FITS</h1>
-    <p>Encontre inspiração de outfits</p>
-  </section>
-
-  <!-- FILTROS -->
-  <section class="filters">
-
-    <input type="radio" name="filter" id="all" checked>
-    <input type="radio" name="filter" id="streetwear">
-    <input type="radio" name="filter" id="sneaker">
-    <input type="radio" name="filter" id="tech">
-    <input type="radio" name="filter" id="casual">
-    <input type="radio" name="filter" id="formal">
-
-    <div class="buttons">
-      <label for="all">All</label>
-      <label for="streetwear">Streetwear</label>
-      <label for="sneaker">Sneaker</label>
-      <label for="tech">Techwear</label>
-      <label for="casual">Casual</label>
-      <label for="formal">Formal</label>
-    </div>
-
-    <!-- GRID -->
-    <div class="grid">
-      <div class="card streetwear">Street Fit</div>
-      <div class="card sneaker">Sneaker Fit</div>
-      <div class="card tech">Techwear Fit</div>
-      <div class="card casual">Casual Luxe</div>
-      <div class="card formal">Formal Edge</div>
-    </div>
-
-  </section>
-
-  <!-- CATÁLOGO -->
-  <section class="catalogo">
-
-    <div class="produto">
-      <img src="img/bergas-removebg-preview.png" alt="Streetwear Black">
-
-      <div class="info">
-        <h3>Streetwear Black</h3>
-        <p>Oversized + Cargo Fit</p>
-
-        <div class="preco">
-          <span class="valor">R$ 289,90</span>
-          <span class="old">R$ 359,90</span>
-        </div>
-
-        <button>Comprar</button>
+      <div class="auth">
+        <a href="joao.html">
+          <button>Sign In</button>
+          <button class="green">Join Free</button>
+        </a>
       </div>
-    </div>
+    </header>
 
-    <div class="produto">
-      <img src="img/eduar-removebg-preview.png" alt="Urban Sneaker">
+    <!-- HERO -->
+    <section class="hero">
+      <h1>EXPLORE FITS</h1>
+      <p>Encontre inspiração de outfits</p>
+    </section>
 
-      <div class="info">
-        <h3>Urban Sneaker</h3>
-        <p>Exclusive Sneaker Drop</p>
+    <!-- FILTROS -->
+    <section class="filters">
+      <input type="radio" name="filter" id="all" checked />
+      <input type="radio" name="filter" id="streetwear" />
+      <input type="radio" name="filter" id="sneaker" />
+      <input type="radio" name="filter" id="tech" />
+      <input type="radio" name="filter" id="casual" />
+      <input type="radio" name="filter" id="formal" />
 
-        <div class="preco">
-          <span class="valor">R$ 329,90</span>
-          <span class="old">R$ 500,00</span>
-        </div>
-
-        <button>Comprar</button>
+      <div class="buttons">
+        <label for="all">All</label>
+        <label for="streetwear">Streetwear</label>
+        <label for="sneaker">Sneaker</label>
+        <label for="tech">Techwear</label>
+        <label for="casual">Casual</label>
+        <label for="formal">Formal</label>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/eduardo-removebg-preview.png" alt="Techwear Gray">
-
-      <div class="info">
-        <h3>Techwear Gray</h3>
-        <p>Cyber Urban Collection</p>
-
-        <div class="preco">
-          <span class="valor">R$ 389,90</span>
-          <span class="old">R$ 499,90</span>
-        </div>
-
-        <button>Comprar</button>
+      <!-- GRID -->
+      <div class="grid">
+        <div class="card streetwear">Street Fit</div>
+        <div class="card sneaker">Sneaker Fit</div>
+        <div class="card tech">Techwear Fit</div>
+        <div class="card casual">Casual Luxe</div>
+        <div class="card formal">Formal Edge</div>
       </div>
-    </div>
+    </section>
 
-    <div class="produto">
-      <img src="img/gu-removebg-preview.png" alt="Minimal Casual">
+    <!-- CATÁLOGO -->
+    <section class="catalogo">
+      <div class="produto">
+        <img src="img/bergas-removebg-preview.png" alt="Streetwear Black" />
 
-      <div class="info">
-        <h3>Minimal Casual</h3>
-        <p>Clean Luxury Outfit</p>
+        <div class="info">
+          <h3>Streetwear Black</h3>
+          <p>Oversized + Cargo Fit</p>
 
-        <div class="preco">
-          <span class="valor">R$ 219,90</span>
-          <span class="old">R$ 310,90</span>
+          <div class="preco">
+            <span class="valor">R$ 289,90</span>
+            <span class="old">R$ 359,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/rafael-removebg-preview (1).png" alt="Formal Edge">
+      <div class="produto">
+        <img src="img/eduar-removebg-preview.png" alt="Urban Sneaker" />
 
-      <div class="info">
-        <h3>Formal Edge</h3>
-        <p>Elegant Street Formal</p>
+        <div class="info">
+          <h3>Urban Sneaker</h3>
+          <p>Exclusive Sneaker Drop</p>
 
-        <div class="preco">
-          <span class="valor">R$ 599,90</span>
-          <span class="old">R$ 749,90</span>
+          <div class="preco">
+            <span class="valor">R$ 329,90</span>
+            <span class="old">R$ 500,00</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/joao.png" alt="Funko Pop All Black Style">
+      <div class="produto">
+        <img src="img/eduardo-removebg-preview.png" alt="Techwear Gray" />
 
-      <div class="info">
-        <h3>Shadow Street</h3>
-        <p>Funko Pop Urban Black Edition</p>
+        <div class="info">
+          <h3>Techwear Gray</h3>
+          <p>Cyber Urban Collection</p>
 
-        <div class="preco">
-          <span class="valor">R$ 349,90</span>
-          <span class="old">R$ 499,90</span>
+          <div class="preco">
+            <span class="valor">R$ 389,90</span>
+            <span class="old">R$ 499,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/duda.png.png" alt="Style Formal">
+      <div class="produto">
+        <img src="img/gu-removebg-preview.png" alt="Minimal Casual" />
 
-      <div class="info">
-        <h3>Formal Style</h3>
-        <p>Elegant Dress</p>
+        <div class="info">
+          <h3>Minimal Casual</h3>
+          <p>Clean Luxury Outfit</p>
 
-        <div class="preco">
-          <span class="valor">R$ 599,90</span>
-          <span class="old">R$ 669,90</span>
+          <div class="preco">
+            <span class="valor">R$ 219,90</span>
+            <span class="old">R$ 310,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/FUNKOGU.png" alt="Funko Casual Streetwear">
+      <div class="produto">
+        <img src="img/rafael-removebg-preview (1).png" alt="Formal Edge" />
 
-      <div class="info">
-        <h3>Streetwear Style</h3>
-        <p>Casual Elegant</p>
+        <div class="info">
+          <h3>Formal Edge</h3>
+          <p>Elegant Street Formal</p>
 
-        <div class="preco">
-          <span class="valor">R$ 129,90</span>
-          <span class="old">R$ 159,90</span>
+          <div class="preco">
+            <span class="valor">R$ 599,90</span>
+            <span class="old">R$ 749,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/funkopopurban.png" alt="Funko Urban Camo Style">
+      <div class="produto">
+        <img src="img/joao.png" alt="Funko Pop All Black Style" />
 
-      <div class="info">
-        <h3>Urban Camo Style</h3>
-        <p>Urban Casual</p>
+        <div class="info">
+          <h3>Shadow Street</h3>
+          <p>Funko Pop Urban Black Edition</p>
 
-        <div class="preco">
-          <span class="valor">R$ 149,90</span>
-          <span class="old">R$ 189,90</span>
+          <div class="preco">
+            <span class="valor">R$ 349,90</span>
+            <span class="old">R$ 499,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/funkomulher-removebg-preview.png" alt="Funko Feminino">
+      <div class="produto">
+        <img src="img/duda.png.png" alt="Style Formal" />
 
-      <div class="info">
-        <h3>Urban Girl Style</h3>
-        <p>Casual Streetwear</p>
+        <div class="info">
+          <h3>Formal Style</h3>
+          <p>Elegant Dress</p>
 
-        <div class="preco">
-          <span class="valor">R$ 149,90</span>
-          <span class="old">R$ 189,90</span>
+          <div class="preco">
+            <span class="valor">R$ 599,90</span>
+            <span class="old">R$ 669,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-    <div class="produto">
-      <img src="img/ceara.png" alt="Funko Puma Streetwear">
+      <div class="produto">
+        <img src="img/FUNKOGU.png" alt="Funko Casual Streetwear" />
 
-      <div class="info">
-        <h3>Puma Streetwear</h3>
-        <p>Style Casual</p>
+        <div class="info">
+          <h3>Streetwear Style</h3>
+          <p>Casual Elegant</p>
 
-        <div class="preco">
-          <span class="valor">R$ 159,90</span>
-          <span class="old">R$ 199,90</span>
+          <div class="preco">
+            <span class="valor">R$ 129,90</span>
+            <span class="old">R$ 159,90</span>
+          </div>
+
+          <button>Comprar</button>
         </div>
-
-        <button>Comprar</button>
       </div>
-    </div>
 
-  </section>
+      <div class="produto">
+        <img src="img/funkopopurban.png" alt="Funko Urban Camo Style" />
 
-</body>
+        <div class="info">
+          <h3>Urban Camo Style</h3>
+          <p>Urban Casual</p>
+
+          <div class="preco">
+            <span class="valor">R$ 149,90</span>
+            <span class="old">R$ 189,90</span>
+          </div>
+
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="img/funkomulher-removebg-preview.png" alt="Funko Feminino" />
+
+        <div class="info">
+          <h3>Urban Girl Style</h3>
+          <p>Casual Streetwear</p>
+
+          <div class="preco">
+            <span class="valor">R$ 149,90</span>
+            <span class="old">R$ 189,90</span>
+          </div>
+
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="img/ceara.png" alt="Funko Puma Streetwear" />
+
+        <div class="info">
+          <h3>Puma Streetwear</h3>
+          <p>Style Casual</p>
+
+          <div class="preco">
+            <span class="valor">R$ 159,90</span>
+            <span class="old">R$ 199,90</span>
+          </div>
+
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
