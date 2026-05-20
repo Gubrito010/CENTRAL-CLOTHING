@@ -1,0 +1,180 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  padding-bottom: 50px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  color: #ffc933;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav .active {
+  color: #ffc933;
+}
+
+.buttons-top button {
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.signin {
+  background: transparent;
+  border: 1px solid #ffc933;
+  color: white;
+}
+
+.join {
+  background: #ffc933;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient(to right, #fff, #ffc933);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 14px 24px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.filters .selected {
+  border-color: #ffc933;
+  color: #ffc933;
+  box-shadow: 0 0 15px rgba(255, 201, 51, 0.3);
+}
+
+/* RANKING */
+.ranking {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 201, 51, 0.15);
+}
+
+.position {
+  font-size: 120px;
+  font-weight: 900;
+  width: 180px;
+  text-align: center;
+  color: #ffc933;
+}
+
+.silver {
+  color: #ddd;
+}
+
+.bronze-color {
+  color: #d88a35;
+}
+
+.card img {
+  height: 250px;
+  margin-right: 40px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.info span {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #ffc933;
+  border-radius: 20px;
+  color: #ffc933;
+  margin-bottom: 14px;
+}
+
+.info p {
+  color: #aaa;
+  font-size: 22px;
+}
+
+.score {
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffc933;
+  min-width: 250px;
+  text-align: center;
+}
